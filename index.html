@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1> Contact Us </h1>
+    <form id="form">
+        <div class="field">
+          <label for="to_name">Name</label><br>
+          <input type="text" name="to_name" id="to_name"><br><br>
+        </div>
+        <div class="field">
+          <label for="from_name">Email</label><br>
+          <input type="text" name="from_name" id="from_name"><br><br>
+        </div>
+        <div class="field">
+            <label for="reply_to">Subject</label><br>
+            <input type="text" name="reply_to" id="reply_to"><br><br>
+          </div>
+        
+        <div class="field">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" required></textarea><br><br>
+        </div>
+      
+        <button type="submit">Send Message</button>
+
+      </form>
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('OuKThbyhlUPV9ECPS')
+      </script>
+    <script src="code.js"></script>
+</body>
+</html>
